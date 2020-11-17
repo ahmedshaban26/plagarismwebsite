@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Home</title>
+</head>
+
+<body>
+
+    <!--start navBar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container ">
+      <a class="navbar-brand" href="#">
+        <img src="img/logoo.jpeg" >
+        <span>Plagarism Checker</span>
+        <h6>created by - SIRG GROUP</h6>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link frist" href="#">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="#">Work </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Blog </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Contact </a>
+            </li>
+          <a href="index.html" class="login"> <button type="button" class="btn btn-success">Login</button> </a> 
+
+        
+        </ul>
+    
+        </div>
+      </div>
+    </nav>
+
+    <!--end naVbar-->  
+
+    <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+      <!-- page content -->
+      <div class="page-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mb-4">
+              <div class="main-box">
+                <h2>PLAGIARISM CHECKER</h2>
+                <p>To use this plagiarism checker, please copy and paste your content in the box below, and then click on
+                  the
+                  big blue button that says “Check Plagiarism!” then sit back and watch as your article is scanned for
+                  duplicated content.</p>
+                <div class="box-content">
+                  <textarea id="myText"
+                    placeholder="Copy and paste your text here to detect plagiarized content ..."></textarea>
+                  <div class="upload">
+                    <input type="file" id="file" />
+                    <label for="file" class="btn-2">upload</label>
+                  </div>
+                  <div class="words">
+                    <p class="float-left">Limit: <span> 1000 Words per Search</span></p>
+                    <p class="float-right">Total Words: <span class="num-words"></span></p>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="row some-check my-3">
+                    <div class="col-lg-6 mb-4">
+                      <h6>Check Plagiarism via Webpage URL</h6>
+                      <input type="text" class="form-control" placeholder="insert URL here">
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                      <h6>Exclude a specific URL</h6>
+                      <input type="text" class="form-control" placeholder="insert URL here">
+                    </div>
+                  </div>
+                </div>
+                <div class="check">
+                  <button class="btn btn-primary"><i class="fas fa-search"></i> Check Plagiarism</button>
+                </div>
+              </div>
+
+              <!-- Results -->
+              <div class="Results mt-4">
+                <h2>Results</h2>
+                <div class="row mb-4">
+                  <div class="col-lg-6">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="Checked">
+                              <span>100%</span>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="pla">Completed: 100% Checked</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                  <div class="col-lg-6">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="Plagiarism">
+                              <span>100%</span>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="pla">Plagiarism</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="Unique">
+                              <span class="uni">0%</span>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="pla">Unique</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <hr>
+                <div class="Plagiarism-box">
+                  <span class="Plagiarized">Plagiarized</span>
+                  <span class="phrase">To use this plagiarism checker, please copy and paste your content in the box below,
+                    and then click on the big blue button that says “Check Plagiarism!</span>
+                  <span class="compare"><a href="">compare</a></span>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="more-info mt-5 text-center">
+                  <button class="btn btn-info text-center">
+                    <a href="home.html">Start New Search</a>
+                  </button>
+                  <button class="btn btn-success text-center">
+                    Download Report
+                  </button>
+                </div>
+
+
+              </div>
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+
+      <!--start Features-->
+
+      <div class="features text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md feat">
+              <h4><i class="fas fa-search"></i> DeepSearch™ technology</h4>
+              <p>With contextual analysis, word placement, and our smart algorithms, checking your writing has never been easier</p>
+            </div>
+            <div class="col-lg-4 feat">
+              <h4><i class="fas fa-tachometer-alt speed"></i> Lightspeed recognition</h4>
+              <p>Our software pairs speed with the accuracy of DeepSearch™ technology</p>
+            </div>
+            <div class="col-lg-4 feat">
+              <h4><i class="fas fa-user-lock security"></i> Privacy comes standard</h4>
+              <p>We back industry-leading technology with a three-part pledge, Our Commitment to you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--end Features-->
+
+      <!--Start Feedback-->
+
+      <div class="feedback">
+        <div class="container">
+          <div class="row">
+           
+            <div class="col-lg-6">
+              <div class="overlay-img"></div>
+              <img src="img/img01.png">
+            </div>
+
+            <div class="col-lg-6 section-reight">
+              <h1>Rich & Intuitive <span> Feedback.</span></h1>
+              <h3>Find plagiarism with less stress with a click of a button and an easy, immersive experience.</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <h1><i class="fas fa-comments"></i> ColorGrade™ Feedback</h1>
+
+                  <p>Easily spot exact matches vs. near-exact or 'fuzzy' matches with corresponding colors.</p>
+                </li>
+                <li>
+                  <h1> <i class="fas fa-binoculars"></i> Interactive Snippet Text</h1>
+
+                  <p>Easily drill-down on your matches side-by-side with our interactive and intuitive snippet text viewer.</p>
+                </li>
+                <li>
+                  <h1><i class="fas fa-user-lock security"></i> Comprehensive Plagiarism</h1>
+                  <p>Our comprehensive plagiarism score is backed by billions of internet sources</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--end Feedback-->
+
+      <!--start paied options -->
+
+      <div class="paid-option">
+        <div class="container">
+          <div class="row">
+          <div class="card col-lg-4 col-sm-12">
+              <div class="imgbx">
+                <h1 class="price one"> <span class="dollar" >$</span>9</h1>
+              <p>Per Month / Paid Annually</p>
+
+              </div>
+              <div class="contentbx">
+                  <div class="option">
+                      <h3><i class="fas fa-check-circle"></i> Includes 3 seats.</h3>
+                      <h3><i class="fas fa-check-circle"></i> Additional seats for $4 each</h3> 
+                      <h3><i class="fas fa-check-circle"></i> Can Check More Than 1000 words</h3>
+                      
+                  </div>
+                  <a href="#">Buy Now</a>
+              </div>
+          </div>
+          <div class="card col-lg-4 col-sm-12">
+            <div class="imgbx">
+              <h1 class="price two"> <span class="dollar">$</span>19</h1>
+              <p> Per 6 Month / Paid Annually</p>
+            </div>
+            <div class="contentbx">
+              <div class="option">
+                  <h3><i class="fas fa-check-circle"></i> Includes 3 seats.</h3>
+                  <h3><i class="fas fa-check-circle"></i> Additional seats for $4 each</h3> 
+                  <h3><i class="fas fa-check-circle"></i> Can Check More Than 1000 words</h3>
+                  
+
+              </div>
+             
+              <a href="#">Buy Now</a>
+            </div>
+        </div>
+        <div class="card col-lg-4 col-sm-12">
+          <div class="imgbx">
+            <h1 class="price three"> <span class="dollar">$</span>29</h1>
+            <p>Per 1 year / Paid Annually</p>
+
+          </div>
+          <div class="contentbx">
+            <div class="option">
+                <h3><i class="fas fa-check-circle"></i> Includes 3 seats.</h3>
+                <h3><i class="fas fa-check-circle"></i> Additional seats for $4 each</h3> 
+                <h3><i class="fas fa-check-circle"></i> Can Check More Than 1000 words</h3>
+
+            </div>
+           
+            <a href="#">Buy Now</a>
+          </div>
+      </div>
+    </div>
+  </div>
+      </div>
+      </div>
+
+      <!--end paied options -->
+
+
+      <!--start slider-->
+
+      <div class="slider">
+        <div class="container">
+          <div id="slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slider" data-slide-to="0" class="active"></li>
+              <li data-target="#slider" data-slide-to="1"></li>
+              <li data-target="#slider" data-slide-to="2"></li>
+              <li data-target="#slider" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img03.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img04.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img05.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img06.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--end slider-->
+
+      <!--start about-->
+
+      <div class="about  ">
+        <h1 class="text-center wow bounceInUp">WELCOME TO SIRG GROUP</h1>
+        <p class="text-center lead">As you know without Science our world would suffer a lot. There is no doubt that Scientific Innovation Research Group (SIRG) plays an Important role in our life. It gives us effective means for developing our activities in all fields of life including health, industry, education, energy, space sciences, etc.</p>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInLeft">
+              <div class="card" style="width: 18rem;">
+                <img src="img/CIRG.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Received for SIRG.</h5>
+                  <p >International Conference on Smart Sustainable Intelligent Computing and Applications under Innovative Trends in Engineering Technology and Management (ICITETM 2020).</p>
+                  <a href="#" class="btn btn-primary t">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInDown ">
+              <div class="card" style="width: 18rem;">
+                <img src="img/CIRG3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> INTERNATIONAL CONFERENCE</h5>
+                  <p >We are Happy to announce that now IEMIS 2020 is now technically sponsored by Scientific Innovation Research Group (SIRG), Egypt <br> and we are so proud for that.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInRight">
+              <div class="card" style="width: 18rem;">
+                <img src="img/CIRG2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GOOD PUBLISHING</h5>
+                  <p >We would like to invite all Friends, Researchers, colleagues, and Students to prepare 4-6 pages in English in connection with the computer field to publish it for free in this journal.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!--end about-->
+
+      <!--start some-info-->
+
+      <div class="some-info">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-lg-4 col-md-4 animate__backInLeft">
+              <img src="img/plagiarism-check.png" alt="">
+            </div>
+            <div class="col-lg-8 col-md-8">
+              <h1>Plagiarism Checking</h1>
+              <p>Grammarly’s plagiarism checker can detect plagiarism from billions of web pages as well as from ProQuest’s academic databases. Our free plagiarism check will tell you whether or not your text contains duplicate content. Our Premium plagiarism check highlights passages that require citations and gives you the resources you need to properly credit your sources.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 animate__backInLeft" >
+              <img src="img/writing-mistake.png" alt="">
+            </div>
+            <div class="col-lg-8 col-md-8">
+              <h1>Writing Enhancements</h1>
+              <p>The plagiarism checker is part of a robust writing app that offers advanced feedback on writing mechanics like grammar and spelling as well as more complex stylistic issues like word choice, conciseness, tone, and more.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--end some-info-->
+
+      
+      <div class="boxes text-center">
+        <h1 class="wow flipInY ">Business Growth Services</h1>
+        <p class="boxes-paragraph">We serve small and medium sized companies in all tech related industries with <br>
+            high quality growth services which are presented below</p>
+        <div class="container">
+          <div class="row">
+            
+            <div class="type col-lg-4 col-md-4 col-sm-12 wow fadeInUp">
+                <img class="card" src="images/services-icon-1.svg" alt="alternative">
+                <h2>Market Analysis </h2>
+                <p>Our team of enthusiastic marketers will analyse and evaluate how your company stacks against the closest competitors </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+
+            <div class="type col-lg-4 col-md-4 col-sm-12 wow fadeInUp">
+              <img class="card" src="images/services-icon-2.svg" alt="alternative">    
+                <h2>Opportunity Scan </h2>
+                <p>Once the market analysis process is completed our staff will search for opportunities that are in reach</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+
+            <div class="type col-lg-4 col-md-4 col-sm-12 wow fadeInUp">
+              <img class="card" src="images/services-icon-3.svg" alt="alternative">
+                <h2>Action Plan </h2>
+                <p>With all the information in place you will be presented with an action plan that your company needs to follow </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    <!--end boxes-->
+
+
+      
+    <div class="container">
+      <div class="at-section">
+        <div class="at-section__title wow fadeInUp ">The Team</div>
+      </div>
+      <div class="at-grid" data-column="3">
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="img/ahmed elngar.jpeg"/></div>
+            <div class="at-user__name">Ahmed Elngar</div>
+            <div class="at-user__title"> Founder and Chair of (SIRG)
+              (Egypt)</div>
+            <ul class="at-social">
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="img/mohamed gmal.jpeg"/></div>
+            <div class="at-user__name">Mohamed Gamal</div>
+            <div class="at-user__title">Professor Assistant and Software Engineer</div>
+            <ul class="at-social">
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="img/omar.jpeg"/></div>
+            <div class="at-user__name">Omar Mahmoud</div>
+            <div class="at-user__title">Android Developer and member of (SIRG) group</div>
+            <ul class="at-social">
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="img/amar.jpeg"></div>
+            <div class="at-user__name">Ammar Fathy</div>
+            <div class="at-user__title">Software Engineer and member of (SIRG) group</div>
+            <ul class="at-social">
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="img/shaban.jpeg"/></div>
+            <div class="at-user__name">Mohamed Shaban</div>
+            <div class="at-user__title">Software Engineer and member of (SIRG) group</div>
+            <ul class="at-social">
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="img/basam.jpg"/></div>
+            <div class="at-user__name">Basma Mostafa</div>
+            <div class="at-user__title">Web Developer and member of (SIRG) group</div>
+            <ul class="at-social">
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+              <li class="at-social__item"><a href="">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+
+      
+      
+        
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+      <iframe jsname="L5Fo6c" class="YMEQtf" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads" 
+      frameborder="0" aria-label="Map" src="https://maps-api-ssl.google.com/maps?hl=en-US&amp;ll=29.042813,31.109099&amp;output=embed&amp;z=20" allowfullscreen=""></iframe>
+  
+        </div>
+        <div class="map col-lg-8 col-sm-6">
+          <hr>
+          <h1 class="head">Contct Us</h1>
+          <img class="logoo" src="img/loge.png">
+
+          <div class="row section">
+            <div class="col-lg-4">
+              <h1>Adress</h1>
+              <p>Faculty Of Computer And Artifial Intelligent,Beni Suef, Egypt</p>
+              <a href="https://www.facebook.com/Sirgclubhome-103716074625431" ><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://twitter.com/" ><i class="fab fa-twitter  fa-2x"></i></a> 
+              <a href="https://www.linkedin.com/" ><i class="fab fa-linkedin  fa-2x"></i></a>
+              <a href="https://www.youtube.com/channel/UCUlbS91-QVe3rBR7C2qro1Q/featured" ><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <div class="map col-lg-4 col-sm-6">
+              <h1>Email</h1>
+              <p>mysirg2020@gmail.com</p>
+            </div>
+            <div class="col-lg-4">
+              <h1>Hotline</h1>
+              <p>01144051946</p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">Copyright © 2020 By <span> SIRG GROUP </span> all Rights Recervied</footer>
+
+  <script src="Js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="Js/jquery-3.2.1.js"></script>
+  <script src="Js/circle-progress.js"></script>
+  <script src="Js/popper.min.js"></script>
+  <script src="Js/bootstrap.min.js"></script>
+  <script src="Js/owl.carousel.min.js"></script>
+  <script src="Js/mine.js"></script>
+  <script src="Js/app.js"></script>
+  <script src="Js/main.js"></script>
+  
+
+  <script>
+
+  </script>
+</body>
+
+</html>
